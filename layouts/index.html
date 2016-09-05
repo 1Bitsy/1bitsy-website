@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="1Bitsy, an actually simple microcontroller">
+    <meta name="author" content="Piotr Esden-Tempski (@esden) and friends">
+
+    <title>1Bitsy :: The simple embedded system</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap-gohugo.css" rel="stylesheet">
+
+    <link href='//fonts.googleapis.com/css?family=Arbutus+Slab%7CCabin:600%7CSource+Code+Pro' rel='stylesheet' type='text/css'>
+    <!-- Add custom CSS here -->
+    <link href="/css/HPstyles.css" rel="stylesheet">
+    <link href="/css/hugofont.css" rel="stylesheet">
+    <link href="/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="/css/owl.theme.default.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <style type="text/css">
+      .callout {
+        table-layout: fixed;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Full Page Image Header Area -->
+    <div id="top" class="header">
+      <div class="vert-text">
+        <a href="#intro"><img src="/img/1bitsy-logo.svg" class="logo" alt="1Bitsy logo"> </a>
+        <div class="buttonbox">
+        <a href="/overview/introduction/" class="btn btn-primary btn-lg">Docs <i class="icon-idea"></i></a>
+        <a href="http://1bitsquared.com/products/1bitsy" target="blank" class="btn btn-success btn-lg">Buy Hardware <i class="icon-arrow-down"></i></a>
+        <a href="http://discuss.1bitsy.org/" target="blank" class="btn btn-info btn-lg">Community <i class="icon-talking"></i></a>
+        <a href="https://github.com/1bitsy" target="blank" class="btn btn-dark btn-lg">GitHub <i class="icon-circlestar"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- /Full Page Image Header Area -->
+
+    <div id="main">
+        <!-- Intro -->
+        <div id="intro" class="counterpoint">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3 text-center">
+                  <i class="lead-icon icon-pacman"></i>
+                <h2>Make the Embedded Fun Again</h2>
+                <p class="lead">
+                    1Bitsy, making microcontrollers easy by transparency instead of opacity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Intro -->
+
+        <!-- Point -->
+        <div class="point">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3 text-center">
+                  <i class="point-icon icon-tux"></i>
+                  <i class="point-icon icon-apple"></i>
+                  <i class="point-icon icon-windows8"></i>
+                <h2>Run Anywhere</h2>
+                <p class="lead">
+                You can develop for your 1Bitsy on any operating system you want. Linux, Windows or MacOS.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Point -->
+
+        <!-- Callout -->
+        <div class="callout">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                  <i class="callout-icon icon-circlestar"></i>
+                  <p></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 text-center">
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner owl-carousel">
+                      {{ partial "quotes.html" ((where $.Site.Data.references.quotes "date" "ge" ($.Now.AddDate -2 0 0) | shuffle )) }}
+                  </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Callout -->
+
+        <!-- Point -->
+        <div class="counterpoint">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3 text-center">
+                  <i class="lead-icon icon-beaker-alt"></i>
+                  <i class="lead-icon icon-heart"></i>
+                  <i class="lead-icon icon-1bitsquared"></i>
+                  <h2>Built with <i class="icon-heart" style="color:#FF4088;"></i></h2>
+                <p class="lead">
+                1Bitsy is developed with love by <a href="http://esden.com">esden</a>,
+                <a href="http://1bitsquared.com">1Bitsquared</a>
+                and <a href="http://oshpark.com">OSHPark</a>.
+                We welcome all contributions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Point -->
+
+        {{/*
+        <!-- Call to Action -->
+        <div id="action" class="call-to-action">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1 text-center">
+                <h1 style="padding-bottom:.5em;">Getting Started</h1>
+                <a href="https://github.com/1bitsy/1bitsy/releases" class="btn btn-lg btn-primary">Download <i class="icon-arrow-down"></i></a>
+                <a href="/overview/quickstart/" style="color:white;font-weight:300;">Quickstart Guide</a>
+                <p>&nbsp;</p>
+                <h4>Using Homebrew?</h4>
+                <pre><code>brew update &amp;&amp; brew install hugo</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Call to Action -->
+        */}}
+
+        <!-- Footer -->
+        <footer id="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3 text-center">
+                <ul class="list-inline">
+                    <li><a href="https://twitter.com/esden" class="icon-twitter icon-2x"></a></li>
+                    <li><a href="https://github.com/1bitsy" class="icon-octocat icon-2x"></a></li>
+                </ul>
+                <hr>
+                <p>Copyright &copy; Piotr Esden-Tempski 2016&ndash;{{ .Now.Format "2006" }}</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+    <!-- /Footer -->
+
+  <!-- Bootstrap core JavaScript -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="/js/jquery-2.1.4.min.js"></script>
+  <script src="/js/owl.carousel.min.js"></script>
+  <!--<script src="/js/bootstrap.min.js"></script>-->
+  <script>
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+              || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        autoplay:true,
+        autoplayHoverPause:true,
+        autoplayTimeout:3000,
+        responsive:{
+            0:{
+                items:1
+            },
+            1000:{
+                items:3
+            },
+        }
+    })
+    </script>
+
+    {{ template "partials/analytics.html" . }}
+  </body>
+
+</html>

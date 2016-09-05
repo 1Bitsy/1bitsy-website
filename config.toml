@@ -1,0 +1,67 @@
+title = "1Bitsy: Microcontroller with the lights on"
+baseurl = "http://1bitsy.esden.net/"
+MetaDataFormat = "yaml"
+pluralizeListTitles = false
+
+[blackfriday]
+  plainIDAnchors = true
+
+[params]
+  description = "Documentation of 1Bitsy, a small affordable and actually easy to understand development platform."
+  author = "with love by 1BitSquared and OSHPark"
+
+[taxonomies]
+  tag = "tags"
+  group = "groups"
+
+[[menu.main]]
+    name = "1Bitsy Store"
+    pre = "<i class='fa fa-buy'></i>"
+    url = "https://1bitsquared.com/products/1bitsy"
+    weight = -210
+
+[[menu.main]]
+    name = "1Bitsy GitHub"
+    pre = "<i class='fa fa-download'></i>"
+    url = "https://github.com/1bitsy"
+    weight = -200
+[[menu.main]]
+    name = "Press & Articles"
+    pre = "<i class='fa fa-bullhorn'></i>"
+    url = "/community/press/"
+    weight = -160
+[[menu.main]]
+    name = "Discuss 1Bitsy"
+    pre = "<i class='fa fa-comments'></i>"
+    url = "http://discuss.1bitsy.org/"
+    weight = -150
+[[menu.main]]
+    name = "About 1Bitsy"
+    identifier = "about"
+    pre = "<i class='fa fa-heart'></i>"
+    weight = -110
+[[menu.main]]
+    name = "Getting Started"
+    identifier = "getting started"
+    pre = "<i class='fa fa-road'></i>"
+    weight = -100
+[[menu.main]]
+    name = "Community"
+    identifier = "community"
+    pre = "<i class='fa fa-group'></i>"
+    weight = -50
+[[menu.main]]
+    parent = "community"
+    name = "Discussion Forum"
+    url = "http://discuss.1bitsy.org"
+    weight = 150
+[[menu.main]]
+    name = "Tutorials"
+    identifier = "tutorials"
+    pre = "<i class='fa fa-book'></i>"
+    weight = -40
+[[menu.main]]
+    name = "Issues & Help"
+    pre = "<i class='fa fa-life-ring'></i>"
+    url = "https://github.com/1bitsy/1bitsy/issues"
+    weight = -30
