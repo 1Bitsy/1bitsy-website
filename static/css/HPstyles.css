@@ -32,20 +32,22 @@ body {
     width: 100%;
     min-height: 70%;
     position: relative;
-    background: url(../img/desk.jpg) no-repeat center center fixed;
+    background: white url(../img/gerber/1bitsy_v1_0d/1bitsy-rr-F.Cu.gtl.svg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     z-index: 99999;
-    background-color: black;
 }
+
+/*{{template "gerber/1bitsy_v1_0d/1bitsy-rr-F.Cu.gtl.svg" .}}*/
 
 .logo {
     max-width: 35em;
     width: 100%;
     padding: 2em;
-    background: rgba(255,255,255,0.4);
+    /*background: rgba(204, 128, 255, 0.9);*/
+    background: rgba(255, 255, 255, 0.9);
     -moz-border-radius: 100px;
     -webkit-border-radius: 100px;
     border-radius: 100%;
