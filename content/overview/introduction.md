@@ -6,7 +6,7 @@ menu:
   main:
     parent: getting started
 next: /overview/quickstart
-title: Introduction to 1Bitsy
+title: Introduction
 weight: 5
 ---
 
