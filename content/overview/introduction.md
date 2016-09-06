@@ -12,7 +12,7 @@ weight: 5
 
 ## What is 1Bitsy?
 
-1Bitsy is an embedded hardware/software development platform. We several main goals:
+1Bitsy is an embedded hardware/software development platform. With several main goals:
 
 1. Small size and low cost allowing you to embed the hardware inside your project and leaving it as part of it.
 2. Great debugging tools and simple and thin programming interfaces, making it very easy to understand how it works.
@@ -109,9 +109,9 @@ We are also planning to support the following platforms:
 
 ## Who should use 1Bitsy?
 
-1Bitsy is for people that prefer honesty to fake simplicity.
+1Bitsy is for people that prefer honesty over fake simplicity.
 
-1Bitsy is for people that want to lean and control the hardware they work with.
+1Bitsy is for people that want to learn and control the hardware they work with.
 
 ## Why did you design 1Bitsy?
 
@@ -152,15 +152,15 @@ program and debug the device you are working on. The problem is that interfacing
 with it is usually problematic as you either need expensive proprietary software
 or an OpenSource tool that is difficult to set up.
 
-Few years ago Gareth McMullin created the Black Magic Probe. It is a hardware
-device that implements all the magic of JTAG in it and you can very easily
-connect it to your hardware and your computer without a lot of hassle. Me and
-many others really love the device. After using it for several years now I
+A few years ago Gareth McMullin created the Black Magic Probe. Its a hardware
+device that implements all the magic of JTAG (in it and you can very) while enabling you to easily
+connect it to your hardware and your computer without a lot of hassle. (I and
+many others really love the device.) After using it for several years now I
 realized that most people still don't know about it. I also realized that part
-of the problem is lack of good reference projects and evaluation/development
-boards that can easily take advantage of the Black Magic Probe.
+of the problem is a lack of good reference projects and evaluation/development
+boards that can easily take advantage of the Black Magic Probes abilities.
 
-This is why I decided to create 1Bitsy. The goal is to have example projects,
+This is why I decided to create 1Bitsy. The goal is to have/create example projects,
 tutorials and a hardware platform that can take full advantage of JTAG and the
 Black Magic Probe hardware.
 
