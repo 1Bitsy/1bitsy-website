@@ -21,14 +21,12 @@ weight: 5
 
 ## How is 1Bitsy different?
 
-I know what you are most curious about. "Why should I use 1Bitsy instead of
+I know you are wondering, "Why should I use 1Bitsy instead of
 something else?"
 
-There are hundreds if not thousands different development platforms out there.
+There are hundreds if not thousands of different development platforms out there.
 There are cheap boards that are large, there are small boards that are
-expensive, there are small and cheap and you can download software for free but
-it is closed source and locks you into one specific microcontroller. There are
-small, cheap, simple boards with large communities that try to be simple by
+expensive and there are small and cheap boards you can freely download software for but they are closed source and lock you into one specific microcontroller. There are small, cheap and simple boards with large communities that try to be uncomplicated by
 obscuring and hiding functionality. But as far as we know there is nothing out
 there that fits the following categories at the same time:
 
@@ -89,7 +87,7 @@ Second are tutorials, documentation and community. By guiding you and giving you
 lot's of reading resources you will be able to understand how the 1Bitsy works,
 and if you are really stuck you can always ask someone.
 
-Third is exposing all aspects of the hardware and software to you. By not hiding
+Third by exposing all aspects of the hardware and software to you and not hiding
 things behind opaque interfaces we hope you will be able to grasp how everything
 works. Making it's inner workings clear.
 
@@ -117,7 +115,7 @@ We are also planning to support the following platforms:
 
 I really like developing embedded systems. You can use all the hardware
 resources, you can comprehend the whole system, and everything that is going on.
-You don't have to unravel why and how the linux, windows, MacOS kernel is not
+You don't have to unravel why and how the Linux, Windows, MacOS kernel is not
 doing what you think it should. Instead you just set a few bits in registers and
 the hardware will do exactly what you told it to do. The only person you can
 blame if anything goes wrong is you and no one else. This is a very liberating
@@ -130,14 +128,15 @@ depends on what hardware platform you are using. If it is an Arduino you will
 start adding `print` that output what is going on. You will then spend some time
 trying to understand what the program does based on the output. Generating
 output can very easily alter the functionality of your system that likely relies
-on strict timing. Thus you will advance to the even cruder solution and start
+on strict timing. This is when you start using an LED for debugging but if you are trying to convey more complicated information you will need to use an oscilloscope or logic analyzer because your eyes are not fast enough to register the LED. 
+Thus you will advance to the even cruder solution and start
 blinking an LED but if your code is running too fast you will probably have to
 attach an oscilloscope or logic analyzer to see what is going on. If you are
 like me you will get the feeling of trying to debug by poking a stick into a
 dark pit.
 
 But what if you give up ultimate control over the hardware and turn to a board
-running a full operating system like a linux computer. If you are in trouble you
+running a full operating system like a Linux computer. If you are in trouble you
 can start your program in GDB (GNU Debugger) run the program to the point where
 you encounter your issue, and using breakpoints and variable prints and watches
 you can inspect your program until you find out what is happening. Very easy,
@@ -153,14 +152,14 @@ with it is usually problematic as you either need expensive proprietary software
 or an OpenSource tool that is difficult to set up.
 
 A few years ago Gareth McMullin created the Black Magic Probe. Its a hardware
-device that implements all the magic of JTAG (in it and you can very) while enabling you to easily
+device that implements all the magic of JTAG while enabling you to easily
 connect it to your hardware and your computer without a lot of hassle. (I and
 many others really love the device.) After using it for several years now I
 realized that most people still don't know about it. I also realized that part
 of the problem is a lack of good reference projects and evaluation/development
 boards that can easily take advantage of the Black Magic Probes abilities.
 
-This is why I decided to create 1Bitsy. The goal is to have/create example projects,
+This is why I decided to create 1Bitsy. The goal is to create example projects,
 tutorials and a hardware platform that can take full advantage of JTAG and the
 Black Magic Probe hardware.
 
