@@ -40,7 +40,7 @@ there that fits the following categories at the same time:
 * Has tested and maintained set of open source development tools and libraries
 * Can be plugged into a breadboard for quick prototyping
 
-This is why we decided to create 1Bitsy and we hope you will like it as much as we do! :)
+This is why we created 1Bitsy. We hope you will like it as much as we do!  :)
 
 <!--Scratch:-->
 
