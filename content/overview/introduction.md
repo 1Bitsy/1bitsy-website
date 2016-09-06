@@ -14,7 +14,7 @@ weight: 5
 
 1Bitsy is an embedded hardware/software development platform. With several main goals:
 
-1. Small size and low cost allowing you to embed the hardware inside your project and leaving it as part of it.
+1. Small size (38.1mm x 17.8mm or 1.5in x 0.7in) and low cost allowing you to embed the hardware inside your project and leaving it as part of it.
 2. Great debugging tools and simple and thin programming interfaces, making it very easy to understand how it works.
 3. Easy prototyping, you can cut and paste together the examples to get going very fast.
 4. Lot's of tutorials, example projects and documentation, so you can choose your own path in learning embedded hardware development.
