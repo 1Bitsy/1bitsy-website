@@ -32,7 +32,8 @@ body {
     width: 100%;
     min-height: 70%;
     position: relative;
-    background: white url(../img/gerber/1bitsy_v1_0d/1bitsy-rr-F.Cu.gtl.svg) no-repeat center center fixed;
+    fill: white;
+    background: #0D0626 url(../img/gerber/1bitsy_v1_0d/1bitsy-rr-F.Cu.gtl.svg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -47,7 +48,7 @@ body {
     width: 100%;
     padding: 2em;
     /*background: rgba(204, 128, 255, 0.9);*/
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.70);
     -moz-border-radius: 100px;
     -webkit-border-radius: 100px;
     border-radius: 100%;
@@ -67,7 +68,7 @@ and (orientation : portrait)
         height: 70%;
         width: 100%;
         position: relative;
-        background: white url(../img/gerber/1bitsy_v1_0d/1bitsy-rr-F.Cu.gtl.svg) no-repeat center;
+        background: #222 url(../img/gerber/1bitsy_v1_0d/1bitsy-rr-F.Cu.gtl.svg) no-repeat center;
         background-size: cover;
         z-index: 99999;
         /*background-color: black;*/
@@ -83,7 +84,7 @@ and (orientation : landscape) {
         height: 70%;
         width: 100%;
         position: relative;
-        background: white url(../img/gerber/1bitsy_v1_0d/1bitsy-rr-F.Cu.gtl.svg) no-repeat center;
+        background: #222 url(../img/gerber/1bitsy_v1_0d/1bitsy-rr-F.Cu.gtl.svg) no-repeat center;
         background-size: cover;
         z-index: 99999;
         /*background-color: black;*/
@@ -109,11 +110,11 @@ and (orientation : landscape) {
 
 .counterpoint {
     padding: 50px 0;
-    background-color: rgb(255, 252, 244);
+    background-color: #E5DEFF;
 }
 
 .point {
-    background: rgb(96,210,211);
+    background: #73ADFF;
     padding: 50px 0;
     color: #ffffff;
 }
@@ -176,7 +177,7 @@ a:hover {
     table-layout: fixed;
     height: 420px;
     width: 100%;
-    background-color: rgb(118,156,172);
+    background-color: #D166FF;
     padding: 50px 0;
     color: #ffffff;
 }
@@ -246,7 +247,7 @@ footer a:hover {
 
 .btn-dark {
     color:white;
-    background-color: rgba(30,30,30, 0.8);
+    background-color: rgba(50,50,50, 0.8);
     border-color: black;
 }
 

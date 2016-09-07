@@ -5,7 +5,8 @@
     <circle cx="0" cy="0" r="225" id="1bitsy-rr-F.Cu.gtl_pad-13"/>
   </defs>
   <!--g transform="translate(0,-91440) scale(1,-1)" fill="#cc80ff" stroke="#cc80ff"-->
-  <g transform="translate(0,-91440) scale(1,-1)" fill="currentColor" stroke="currentColor">
+  <!--g transform="translate(0,-91440) scale(1,-1)" fill="#AAA" stroke="#AAA"-->
+  <g transform="translate(0,-91440) scale(1,-1)" fill="#190E44" stroke="#190E44">
     <use xlink:href="#1bitsy-rr-F.Cu.gtl_pad-11" x="115350" y="-40750"/>
     <use xlink:href="#1bitsy-rr-F.Cu.gtl_pad-11" x="130080" y="-41020"/>
     <use xlink:href="#1bitsy-rr-F.Cu.gtl_pad-11" x="112699.8" y="-50266.6"/>
