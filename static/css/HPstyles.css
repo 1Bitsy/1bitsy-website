@@ -46,7 +46,7 @@ body {
 .logo {
     max-width: 35em;
     width: 100%;
-    padding: 2em;
+    padding: 3em;
     /*background: rgba(204, 128, 255, 0.9);*/
     background: rgba(255, 255, 255, 0.70);
     -moz-border-radius: 100px;
@@ -68,7 +68,7 @@ and (orientation : portrait)
         height: 70%;
         width: 100%;
         position: relative;
-        background: #222 url(../img/gerber/1bitsy_v1_0d/1bitsy-rr-F.Cu.gtl.svg) no-repeat center;
+        background: #0D0626 url(../img/gerber/1bitsy_v1_0d/1bitsy-rr-F.Cu.gtl.svg) no-repeat center;
         background-size: cover;
         z-index: 99999;
         /*background-color: black;*/
@@ -84,7 +84,7 @@ and (orientation : landscape) {
         height: 70%;
         width: 100%;
         position: relative;
-        background: #222 url(../img/gerber/1bitsy_v1_0d/1bitsy-rr-F.Cu.gtl.svg) no-repeat center;
+        background: #0D0626 url(../img/gerber/1bitsy_v1_0d/1bitsy-rr-F.Cu.gtl.svg) no-repeat center;
         background-size: cover;
         z-index: 99999;
         /*background-color: black;*/
@@ -177,7 +177,7 @@ a:hover {
     table-layout: fixed;
     height: 420px;
     width: 100%;
-    background-color: #D166FF;
+    background-color: #8C43AB;
     padding: 50px 0;
     color: #ffffff;
 }
