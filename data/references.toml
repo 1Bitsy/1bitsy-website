@@ -1,6 +1,20 @@
 [[quotes]]
 name = "1Bitsquared"
 twitter_handle = "@1bitsquared"
+quote = "1Bitsy V1.0d prototypes. Getting ready for @ohsummit . Thanks to @oshpark you will get a 1Bitsy if you come!"
+link = "https://twitter.com/1bitsquared/status/780876457337761792"
+date = 2016-09-27T00:00:00Z
+
+[[quotes]]
+name = "1Bitsquared"
+twitter_handle = "@1bitsquared"
+quote = "Final pinout of the 1Bitsy V1.0d Open Source JTAG enabled dev board. http://github.com/1bitsy/1bitsy-hardware … for all pinouts"
+link = "https://twitter.com/1bitsquared/status/779776259282735105"
+date = 2016-09-24T00:00:00Z
+
+[[quotes]]
+name = "1Bitsquared"
+twitter_handle = "@1bitsquared"
 quote = "1BitSy V1.0b beta pinout diagram. <a href=http://github.com/1bitsy/1bitsy-hardware>github</a> USB HS/FS, 17 TIMs, 3 ADCs, 15 comm. interfaces."
 link = "https://twitter.com/1bitsquared/status/765674688500477952"
 date = 2016-09-14T00:00:00Z
