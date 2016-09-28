@@ -28,9 +28,9 @@ body {
 
 .header {
     display: table;
-    height: 70%;
+    height: 50%;
     width: 100%;
-    min-height: 70%;
+    min-height: 50%;
     position: relative;
     fill: white;
     background: #0D0626 url(../img/gerber/1bitsy_v1_0d/1bitsy-rr-F.Cu.gtl.svg) no-repeat center center fixed;
@@ -44,7 +44,7 @@ body {
 /*{{template "gerber/1bitsy_v1_0d/1bitsy-rr-F.Cu.gtl.svg" .}}*/
 
 .logo {
-    max-width: 35em;
+    max-width: 25em;
     width: 100%;
     padding: 3em;
     /*background: rgba(204, 128, 255, 0.9);*/
@@ -65,7 +65,7 @@ and (orientation : portrait)
 {
     .header {
         display: table;
-        height: 70%;
+        height: 60%;
         width: 100%;
         position: relative;
         background: #0D0626 url(../img/gerber/1bitsy_v1_0d/1bitsy-rr-F.Cu.gtl.svg) no-repeat center;
@@ -247,7 +247,7 @@ footer a:hover {
 
 .btn-dark {
     color:white;
-    background-color: rgba(50,50,50, 0.8);
+    background-color: rgba(90,90,90, 0.8);
     border-color: black;
 }
 
