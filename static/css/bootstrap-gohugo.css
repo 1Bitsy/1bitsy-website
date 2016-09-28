@@ -1135,7 +1135,7 @@ label {
       -ms-user-select: none;
           user-select: none;
   background-image: none;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   border-radius: 4px;
   -webkit-transition: all 0.15s;
      -moz-transition: all 0.15s;
@@ -1169,7 +1169,7 @@ label {
 }
 .btn-primary {
   color: #fff;
-  background-color: #4770A9;
+  background-color: transparent;
   border-color: #4770A9;
 }
 .btn-primary:hover,
@@ -1184,7 +1184,7 @@ label {
 }
 .btn-success {
   color: #fff;
-  background-color: #8C43AB;
+  background-color: transparent;
   border-color: #8C43AB;
 }
 .btn-success:hover,
@@ -1200,7 +1200,7 @@ label {
 }
 .btn-info {
   color: #fff;
-  background-color: #634EB1;
+  background-color: transparent;
   border-color: #634EB1;
 }
 .btn-info:hover,
