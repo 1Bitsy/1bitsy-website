@@ -26,24 +26,24 @@ pluralizeListTitles = false
     url = "https://github.com/1bitsy"
     weight = -200
 [[menu.main]]
-    name = "Press & Articles"
-    pre = "<i class='fa fa-bullhorn'></i>"
-    url = "/community/press/"
+    name = "Getting Started"
+    identifier = "getting started"
+    pre = "<i class='fa fa-road'></i>"
     weight = -160
+[[menu.main]]
+    name = "Tutorials"
+    identifier = "tutorials"
+    pre = "<i class='fa fa-book'></i>"
+    weight = -150
 [[menu.main]]
     name = "Discuss 1Bitsy"
     pre = "<i class='fa fa-comments'></i>"
     url = "http://discuss.1bitsy.org/"
-    weight = -150
+    weight = -110
 [[menu.main]]
     name = "About 1Bitsy"
     identifier = "about"
     pre = "<i class='fa fa-heart'></i>"
-    weight = -110
-[[menu.main]]
-    name = "Getting Started"
-    identifier = "getting started"
-    pre = "<i class='fa fa-road'></i>"
     weight = -100
 [[menu.main]]
     name = "Community"
@@ -56,12 +56,12 @@ pluralizeListTitles = false
     url = "http://discuss.1bitsy.org"
     weight = 150
 [[menu.main]]
-    name = "Tutorials"
-    identifier = "tutorials"
-    pre = "<i class='fa fa-book'></i>"
-    weight = -40
-[[menu.main]]
     name = "Issues & Help"
     pre = "<i class='fa fa-life-ring'></i>"
     url = "https://github.com/1bitsy/1bitsy/issues"
+    weight = -40
+[[menu.main]]
+    name = "Press & Articles"
+    pre = "<i class='fa fa-bullhorn'></i>"
+    url = "/community/press/"
     weight = -30
