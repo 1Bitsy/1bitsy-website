@@ -134,10 +134,11 @@ make
 ```
 
 5: Connect Black Magic Probe and your 1Bitsy to the computer. Also connect the
-Black Magic Probe to your 1Bitsy using the JTAG ribbon cable. You can look in `About This Mac`->`System Report...`->`USB` if
-it is listing `Black Magic Probe`, to make sure everything works the way it is
-supposed to. You should list the virtual serial devices before and after you
-plug in BMP and 1Bitsy:
+Black Magic Probe to your 1Bitsy using the JTAG ribbon cable. You can look in
+`About This Mac`->`System Report...`->`USB` if it is listing
+`Black Magic Probe`, to make sure everything works the way it is supposed to.
+You should list the virtual serial devices before and after you plug in BMP and
+1Bitsy:
 ```
 ls /dev/cu.usbmodem*
 ```
@@ -202,7 +203,7 @@ CygWin is probably one of the ways to do that. Also you will need a [codeless
 driver](http://www.blacksphere.co.nz/downloads/driver.w32.zip). The driver is
 unsigned so you will need to convince your Windows 10 to accept it. Also the
 driver does not contain any code so it should work on Windows 32 and 64. If it
-does not let us know how to fix this. :)
+does not, let us know how to fix this. :)
 
 ## Quickstart on Linux using DFU Bootloader
 
@@ -223,7 +224,8 @@ sudo add-apt-repository ppa:team-gcc-arm-embedded/ppa
 sudo apt-get update
 sudo apt-get install gcc-arm-embedded
 ```
-2: Clone the 1Bitsy examples repository (you need to have git installed, if you don't have it run `sudo apt-get install git`)
+2: Clone the 1Bitsy examples repository (you need to have git installed, if you
+don't have it run `sudo apt-get install git`)
 ```
 git clone https://github.com/1Bitsy/1bitsy-examples.git
 ```
