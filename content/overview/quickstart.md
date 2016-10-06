@@ -20,6 +20,8 @@ minimal amounts of software.
 * [libopencm3](https://github.com/libopencm3/libopencm3)
 * [some firmware code to play with](https://github.com/1BitSy/1bitsy-examples)
 
+{{< youtube ANM0fdAqDow >}}
+
 ## Quickstart on Ubuntu GNU/Linux using [Black Magic Probe](http://github.com/blacksphere/blackmagic)
 
 1: Add gcc-arm-embedded PPA and install the gcc-arm-embedded package
