@@ -51,7 +51,14 @@ the instructions below. So make sure that your Black Magic Probe got
 can adjust the commands further down in case the device files have different
 names.
 
-5: Go to the example folder of your choosing and connect to Black Magic Probe using the arm-none-eabi GDB.
+5: Make sure your user is in the group `dialout`. You can see what groups your
+user belongs to by typing the command `id`. If the group `dialout` is not listed
+you can add yourself to the group:
+```
+sudo adduser $USER dialout
+```
+
+6: Go to the example folder of your choosing and connect to Black Magic Probe using the arm-none-eabi GDB.
 ```
 cd examples/1bitsy/fancyblink
 arm-none-eabi-gdb fancyblink.elf
@@ -60,7 +67,7 @@ monitor version
 ```
 You should get information about the Black Magic Probe's firmware version.
 
-6: Find and attach to the 1Bitsy using JTAG
+7: Find and attach to the 1Bitsy using JTAG
 ```
 monitor jtag_scan
 attach 1
@@ -68,7 +75,7 @@ attach 1
 jtag_scan should list that it found the STM32F4 of the 1Bitsy and you should be
 able to attach to it.
 
-7: Upload and run the fanciblink example
+8: Upload and run the fanciblink example
 ```
 load
 run
@@ -78,7 +85,7 @@ execution with Ctrl-C. You can now use all the GDB commands to inspect and step
 through the firmware. For a detailed description of the functions see
 appropriate tutorials.
 
-8: Exit GDB. Just press Ctrl-C and Ctrl-D or type `exit`
+9: Exit GDB. Just press Ctrl-C and Ctrl-D or type `exit`
 
 The above steps 5-8 can also be accomplished by running `make flash`. But we
 think it is nicer to actually see what is happening in the background so that
