@@ -64,7 +64,7 @@ sudo adduser $USER dialout
 ```
 cd examples/1bitsy/fancyblink
 arm-none-eabi-gdb fancyblink.elf
-target extended_remote /dev/ttyACM0
+target extended-remote /dev/ttyACM0
 monitor version
 ```
 You should get information about the Black Magic Probe's firmware version.
