@@ -172,7 +172,7 @@ using the arm-none-eabi GDB.
 ```
 cd examples/1bitsy/fancyblink
 arm-none-eabi-gdb fancyblink.elf
-target extended_remote /dev/cu.usbmodemXXXXXXX1
+target extended-remote /dev/cu.usbmodemXXXXXXX1
 monitor version
 ```
 You should get information about the Black Magic Probe's firmware version.
