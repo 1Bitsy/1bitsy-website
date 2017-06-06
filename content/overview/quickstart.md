@@ -204,15 +204,72 @@ actually see what is happening in the background so that you have full control.
 
 ## Quickstart on Windows using [Black Magic Probe](http://github.com/blacksphere/blackmagic)
 
-TODO!~ If you are a Windows user and want to contribute a Quick Start Guide
-join the Gitter channel in the lower right corner of this page, and let us know.
+The easiest way to get started on Windows is to use the Windows Subsystem for Linux in Windows 10. You will want to make sure you are on the Creators Update, run winver and check that it is 1703 or higher. [Here is a WSL install guide](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide).
 
-The main difference will be how to install the toolchain and get a command line.
-CygWin is probably one of the ways to do that. Also you will need a [codeless
-driver](http://www.blacksphere.co.nz/downloads/driver.w32.zip). The driver is
-unsigned so you will need to convince your Windows 10 to accept it. Also the
-driver does not contain any code so it should work on Windows 32 and 64. If it
-does not, let us know how to fix this. :)
+This quickstart will advise to compile in WSL, but you will still need the [ARM embedded toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads) installed to use GDB. Below guidance assumes you have put this on your path.
+
+Open a WSL bash prompt to run through the next sequence of steps.
+
+1: Add gcc-arm-embedded PPA and install the gcc-arm-embedded package
+```
+sudo add-apt-repository ppa:team-gcc-arm-embedded/ppa
+sudo apt-get update
+sudo apt-get install gcc-arm-embedded
+```
+2: Clone the 1Bitsy examples repository (you need to have git installed, if you don't have it run `sudo apt-get install git`)
+You should do this in a location that Windows can access, not under your home directory. You can access your Windows filesystem under /mnt/c where c is your Windows drive letter. From there paths are the same in Unix format.
+```
+cd /mnt/c/Users/username/Source/Repos
+git clone https://github.com/1Bitsy/1bitsy-examples.git
+```
+3: Build examples
+```
+cd 1bitsy-examples
+git submodule init
+git submodule update
+make
+```
+
+4: Connect Black Magic Probe and your 1Bitsy to the computer. Also connect the
+Black Magic Probe to your 1Bitsy using the JTAG ribbon cable. Make sure that you
+plug in the Black Magic Probe first so that it's virtual serial interfaces get
+indexed first. 
+
+Today dmseg and /dev/ttyACM1 are not supported in WSL. You will need to check the Windows device manager to identify the COM port for your Black Magic Probe. There are two, the lower numbered one is the JTAG interface and the other is the UART. Note that for ports >= COM10, add the prefix \\.\, for example:
+```
+target extended-remote COM3
+target extended-remote \\.\COM10
+```
+
+The next steps should be run in Powershell or a Windows command prompt.
+5: Go to the example folder of your choosing and connect to Black Magic Probe using the arm-none-eabi GDB.
+```
+cd Users\username\Source\Repos\1bitsy-examples\examples\1bitsy\fancyblink
+arm-none-eabi-gdb fancyblink.elf
+target extended-remote COM3
+monitor version
+```
+You should get information about the Black Magic Probe's firmware version.
+
+7: Find and attach to the 1Bitsy using JTAG
+```
+monitor jtag_scan
+attach 1
+```
+jtag_scan should list that it found the STM32F4 of the 1Bitsy and you should be
+able to attach to it.
+
+8: Upload and run the fanciblink example
+```
+load
+run
+```
+you should now be running the fancyblink example. You can interrupt the
+execution with Ctrl-C. You can now use all the GDB commands to inspect and step
+through the firmware. For a detailed description of the functions see
+appropriate tutorials.
+
+9: Exit GDB. Just press Ctrl-C and Ctrl-D or type `exit`
 
 ## Quickstart on Linux using DFU Bootloader
 
