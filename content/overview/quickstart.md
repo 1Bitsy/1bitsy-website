@@ -77,7 +77,7 @@ attach 1
 jtag_scan should list that it found the STM32F4 of the 1Bitsy and you should be
 able to attach to it.
 
-8: Upload and run the fanciblink example
+8: Upload and run the fancyblink example
 ```
 load
 run
@@ -185,7 +185,7 @@ attach 1
 jtag_scan should list that it found the STM32F4 of the 1Bitsy and you should be
 able to attach to it.
 
-8: Upload and run the fanciblink example
+8: Upload and run the fancyblink example
 ```
 load
 run
@@ -259,7 +259,7 @@ attach 1
 jtag_scan should list that it found the STM32F4 of the 1Bitsy and you should be
 able to attach to it.
 
-8: Upload and run the fanciblink example
+8: Upload and run the fancyblink example
 ```
 load
 run
